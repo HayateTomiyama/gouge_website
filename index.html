@@ -13,60 +13,186 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
 
         <title>THE GOUGE - 札幌で活動する合唱団</title>
     </head>
     <body>
-        <header class="py-3" style="background-color: aquamarine;">
+        <header class="pt-4" style="background-color: #385535;">
             <!-- Title -->
-            <div class="container">
-                <h1 id="title" class="display-1">THE GOUGE</h1>
-                <p id="introduction" class="lead text-muted">THE GOUGE（ザ・ガウジュ）は、札幌市を拠点に活動する混声合唱団です。</p>
+            <div class="container-md pb-3">
+                <img src="img/logo.jpeg" class="d-block w-10" alt="logo">
             </div>
-
             <!-- Navigation -->
-            <div class="px-5 container-fluid bg-secondary">
+            <div class="container-md border-top border-bottom border-1" style="background-color: #385535;">
                 <ul class="nav nav-fill justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">トップページ</a>
+                        <a class="nav-link text-white" href="#">ホーム</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ガウジュとは</a>
+                        <a class="nav-link text-white" href="#">ガウジュについて</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">これまでの活動</a>
+                        <a class="nav-link text-white" href="#">これまでの活動</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">演奏履歴</a>
+                        <a class="nav-link text-white" href="https://www.youtube.com/channel/UCgnR3ugcSyD_NwlBWNNgulg">Youtube</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">団員募集</a>
+                        <a class="nav-link text-white" href="#">団員募集</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">お問い合わせ</a>
+                        <a class="nav-link text-white" href="#">お問い合わせ</a>
                     </li>
                 </ul>
             </div>
         </header>
 
-        <main>
-            <div style="background-color: aquamarine;">
-                <div class="h-100 container-md bg-primary">
-                    <div class="row">
-                        <div class="col py-5">
-                            <!-- Main image -->
-                            <img src="img/no_image_yoko.jpg" class="d-block mx-auto" alt="221120_mie_stage">
+        <main  class="py-5" style="background-color: #385535;">
+            <!-- Carousel -->
+            <div class="container-md py-5 mx-auto">
+                <div class="row">
+                    <div class="col py-3 rounded border border-1">
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="2000">
+                                    <img src="img/logo.jpeg" class="d-block w-100" alt="logo">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p>ザ・ガウジュは、札幌市を拠点に活動する混声合唱団です。</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="img/220619_harushi.jpg" class="d-block w-100" alt="220619_harushi">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                        <img src="img/221106_rensyu.jpg" class="d-block w-100" alt="221106_rensyu">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- News -->
+            <div class="container-md py-2 pb-3 mt-5 rounded border border-1">
+                <div class="row">
+                    <div class="col my-3">
+                        <span class="material-symbols-outlined text-white pt-1">potted_plant</span>
+                        <h4 class="headline">  お知らせ</h4>
+                        <span class="material-symbols-outlined text-white pt-1">potted_plant</span>
+                        <br>
+                        <p class="pt-4"><span class="material-symbols-outlined">campaign</span>  2022年11月20日(日)_第75回全日本合唱コンクール全国大会　大学・職場・一般部門へ出場</p>
+                        <br>
+                        <a href="https://www.youtube.com/channel/UCgnR3ugcSyD_NwlBWNNgulg" class="link-light"><p class="pt-0"><span class="material-symbols-outlined">campaign</span>  2023年2月18日(土)_THE GOUGE 第４回演奏会開催（特設ページはコチラ！！）</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Youtube & Twitter -->
+            <div class="container-md py-2 pb-3 mt-5  rounded border border-1">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
+                    <!-- Youtube -->
+                    <div class="col-8">
+                        <div class="container-md py-2 pb-3">
+                            <div class="row pb-3">
+                                <div class="col my-3">
+                                    <i class="bi bi-music-note-beamed"></i>
+                                    <h4 class="headline">  演奏音源</h4>
+                                    <i class="bi bi-music-note-beamed"></i>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 g-1">
+                                <div class="col youtube pt-1 px-1 dash_border rounded border-1  mr-1 pb-2">
+                                    <p class="pt-3"><span class="material-symbols-outlined">arrow_right</span> 混声合唱曲集「かなしみはあたらしい」より　『未来へ』</p><br>
+                                    <iframe class="w-100 h-80 d-block mx-auto" src="https://www.youtube.com/embed/v8GGlmEkD5A" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p class="text-end"><small class="text-end">＠令和3年度　札幌市民芸術祭　市民合唱祭</small></p>
+                                </div>
+                                <div class="col youtube pt-1 px-1 dash_border rounded border-1  ml-1 pb-2">
+                                    <p class="pt-3"><span class="material-symbols-outlined">arrow_right</span>混声合唱のための「ラプソディー・イン・チカマツ[近松門左衛門狂想]」より　Ⅱ 貳の段』</p>
+                                    <iframe class="w-100 h-80 d-block mx-auto" src="https://www.youtube.com/embed/5506ws-K6Lo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p class="text-end"><small>＠2019年度北海道合唱コンクール</small></p>
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col my-4">
+                                    <a href="https://www.youtube.com/channel/UCgnR3ugcSyD_NwlBWNNgulg" class="link-light"><h4 class="text-end">その他の演奏はコチラ<i class="bi bi-youtube"></i></h4></a>
+                                    <p class="text-end">チャンネル登録・高評価いただけると励みになります ！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Twitter -->
+                    <div class="col-4 border-start">
+                        <div class="container-md py-2 pb-3">
+                            <div class="row pb-3">
+                                <div class="col my-3">
+                                    <span class="material-symbols-outlined">comment</span>
+                                    <h4 class="headline">Twitter</h4>
+                                    <span class="material-symbols-outlined">chat_bubble</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <a class="twitter-timeline" width="80%" href="https://twitter.com/the_gouge?ref_src=twsrc%5Etfw" data-tweet-limit="1">Tweets by the_gouge</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
         </main>
 
-        <footer class="py-2" style="background-color: grey;">
-            <div class="container">
-                <p class="my-2 text-center">Powered by FC2ホームページ</p>
-                <br>
-                <p class="mb-1 text-center">copyright©2020 THE GOUGE all rights reserved.</p>
+        <footer class="pt-3" style="background-color: grey;">
+            <div class="container-md">
+                <div class="row justify-content-start row-cols-sm-6">
+                    <!-- Nav -->
+                    <div class=" pt-3 col-sm-10">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col align-self-center d-flex align-items-center">
+                                    <a class="text-white" href="#">ホーム</a>
+                                </div>
+                                <div class="col align-self-center d-flex align-items-center">
+                                    <a class="text-white" href="#">ガウジュについて</a>
+                                </div>
+                                <div class="col align-self-center d-flex align-items-center">
+                                    <a class="text-white" href="#">これまでの活動</a>
+                                </div>
+                                <div class="col align-self-center d-flex align-items-center">
+                                    <a class="text-white" href="https://www.youtube.com/channel/UCgnR3ugcSyD_NwlBWNNgulg">YouTube</a>
+                                </div>
+                                <div class="col align-self-center d-flex align-items-center">
+                                    <a class="text-white" href="#">団員募集</a>
+                                </div>
+                                <div class="col align-self-center d-flex align-items-center">
+                                    <a class="text-white" href="#">お問い合わせ</a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- To top / Accounts -->
+                    <div class="col-sm-2">
+                        <a class="text-white" href="#"><span id="tothetop" class="material-symbols-outlined">arrow_circle_up</span></a>                       
+                        <div class="col py-2 align-item-end">
+                            <a href="https://www.youtube.com/channel/UCgnR3ugcSyD_NwlBWNNgulg" class=""><button type="button" class="btn btn-danger rounded-circle"><i id="youtube_button" class="bi bi-youtube"></i></button></a>
+                            <a href="https://twitter.com/the_gouge" class=""><button type="button" class="btn btn-primary  rounded-circle"><i id="twitter_button" class="bi bi-twitter"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-md w-75 text-center border-top border-1">
+                <p class="py-1 text-end"><small>copyright © THE GOUGE all rights reserved.　　Powered by FC2ホームページ</small></p>
             </div>
         </footer>
         

@@ -1,8 +1,62 @@
 
 h1{
     font-family: 'Josefin Sans', sans-serif;
+    color: white;
 }
 
-a,p{
+a,p,small,h2,h3,h4,h5{
     font-family: 'Kiwi Maru', serif;
+    color: white;
+}
+
+i{
+    vertical-align: top;
+    color: white; 
+}
+
+.dash_border{
+    border: dashed;
+    color: white;
+}
+
+.headline{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.material-symbols-outlined{
+    vertical-align: middle;
+    font-size: 18px;
+    color: white;
+}
+
+.row-eq-height{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.youtube{
+    height: 350px;
+}
+
+#tothetop{
+    font-size: 48px;
+}
+
+#youtube_button{
+    font-size: 20px;
+    color: white;
+
+}
+
+#twitter_button{
+    font-size: 20px;
+    color: white;
+
+}
+
+#campaign{
+    padding-bottom: 2px;
+    vertical-align: top;
+    font-size: 24px;
 }
