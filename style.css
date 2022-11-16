@@ -19,6 +19,12 @@ i{
     color: white;
 }
 
+.dash_border_bottom{
+    border-bottom: white
+    dashed;
+    padding-bottom: 5px;
+}
+
 .headline{
     display: inline-block;
     vertical-align: top;
